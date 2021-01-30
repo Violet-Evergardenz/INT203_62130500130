@@ -194,68 +194,169 @@
                     interfaces. When a router receives a packet from one of its attached networks, it needs to forward
                     the
                     packet
-                    to another attached network (<span class="font-meduim text-yellow-600 underline">unicast routing </span>) or to some attached networks(in case of multicast
+                    to another attached network (<span class="font-meduim text-yellow-600 underline">unicast routing
+                    </span>) or to some attached networks(in case of multicast
                     routing).
                   </div>
                 </div>
               </li>
             </ol>
+          </div>
+          <div class=" text-gray-600">Some of the other <span class="font-bold text-gray-700">services which are
+              expected</span> from the network layer are:</div>
+          <div><img src="images/kim.jpg"></div>
+          <div>
+            <ol class="list-decimal space-y-5">
+              <li class="mr-14 ml-14 text-gray-600">
+                <div><span class="font-bold text-green-600 underline"> Error Control </span> <span
+                    class="font-bold text-gray-700">–</span> </div>
+                <div class="space-y-3">
+                  <div>
+                    Although it can be implemented in the network layer, but it is usually not preferred because the
+                    data
+                    packet
+                    in a network layer maybe fragmented at each router, which makes error checking inefficient in the
+                    network
+                    layer.
+                  </div>
 
-              Some of the other services which are expected from the network layer are:
-
-
-
-
-              Error Control –
-              Although it can be implemented in the network layer, but it is usually not preferred because the data
-              packet
-              in a network layer maybe fragmented at each router, which makes error checking inefficient in the network
-              layer.
-
-              Flow Control –
-              It regulates the amount of data a source can send without overloading the receiver. If the source produces
-              a
-              data at a very faster rate than the receiver can consume it, the receiver will be overloaded with data. To
-              control the flow of data, the receiver should send a feedback to the sender to inform the latter that it
-              is
-              overloaded with data.
-              There is a lack of flow control in the design of the network layer. It does not directly provide any flow
-              control. The datagrams are sent by the sender when they are ready, without any attention to the readiness
-              of
-              the receiver.
-
-
-              Congestion Control –
-              Congestion occurs when the number of datagrams sent by source is beyond the capacity of network or
-              routers.
-              This is another issue in the network layer protocol. If congestion continues, sometimes a situation may
-              arrive
-              where the system collapses and no datagrams are delivered. Although congestion control is indirectly
-              implemented in network layer, but still there is a lack of congestion control in the network layer.
-              Advantages of Network Layer Services :
-
-              Packetization service in network layer provides an ease of transportation of the data packets.
-              Packetization also eliminates single points of failure in data communication systems.
-              Routers present in the network layer reduce network traffic by creating collision and broadcast domains.
-              With the help of Forwarding, data packets are transferred from one place to another in the network.
-              Disadvantages of Network Layer Services :
-
-              There is a lack of flow control in the design of the network layer.
-              Congestion occurs sometimes due to the presence of too many datagrams in a network which are beyond the
-              capacity of network or the routers. Due to this, some routers may drop some of the datagrams and some
-              important piece of information maybe lost.
-              Although indirectly error control is present in network layer, but there is a lack of proper error control
-              mechanisms as due to presence of fragmented data packets, error control becomes difficult to implement.
-
-
-
-              Attention reader! Don’t stop learning now. Get hold of all the important CS Theory concepts for SDE
-              interviews
-              with the CS Theory Course at a student-friendly price and become industry ready.
-            
+                </div>
+              </li>
+              <li class="mr-14 ml-14 text-gray-600">
+                <div><span class="font-bold text-green-600 underline">Flow Control </span> <span
+                    class="font-bold text-gray-700">– </span></div>
+                <div class="space-y-3">
+                  <div>
+                    It regulates the amount of data a source can send without overloading the receiver. If the source
+                    produces
+                    a
+                    data at a very faster rate than the receiver can consume it, the receiver will be overloaded with
+                    data. To
+                    control the flow of data, the receiver should send a feedback to the sender to inform the latter
+                    that it
+                    is
+                    overloaded with data.<br>
+                    There is a lack of flow control in the design of the network layer. It does not directly provide any
+                    flow
+                    control. The datagrams are sent by the sender when they are ready, without any attention to the
+                    readiness
+                    of
+                    the receiver.
+                  </div>
+                </div>
+              </li>
+              <li class="mr-14 ml-14 text-gray-600">
+                <div><span class="font-bold text-green-600 underline">Congestion Control </span> <span
+                    class="font-bold text-gray-700">– </span></div>
+                <div class="space-y-3">
+                  <div>
+                    Congestion occurs when the number of datagrams sent by source is beyond the capacity of network or
+                    routers.
+                    This is another issue in the network layer protocol. If congestion continues, sometimes a situation
+                    may
+                    arrive
+                    where the system collapses and no datagrams are delivered. Although congestion control is indirectly
+                    implemented in network layer, but still there is a lack of congestion control in the network layer.
+                  </div>
+                </div>
+              </li>
+            </ol>
           </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+          <div class="font-bold text-gray-700">Advantages of Network Layer Services :</div>
+          <ol class="list-disc ">
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                Packetization service in network layer provides an ease of transportation of the data packets.
+              </div>
+
+            </li>
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                Packetization also eliminates single points of failure in data communication systems.
+              </div>
+
+            </li>
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                Routers present in the network layer reduce network traffic by creating collision and broadcast domains.
+              </div>
+
+            </li>
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                With the help of Forwarding, data packets are transferred from one place to another in the network.
+              </div>
+
+            </li>
+          </ol>
+
+
+          <div class="font-bold text-gray-700">Disadvantages of Network Layer Services :</div>
+          <ol class="list-disc ">
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                There is a lack of flow control in the design of the network layer.
+              </div>
+
+            </li>
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                Congestion occurs sometimes due to the presence of too many datagrams in a network which are beyond the
+                capacity of network or the routers. Due to this, some routers may drop some of the datagrams and some
+                important piece of information maybe lost.
+              </div>
+
+            </li>
+            <li class="mr-14 ml-14 text-gray-600">
+
+
+              <div>
+                Although indirectly error control is present in network layer, but there is a lack of proper error
+                control
+                mechanisms as due to presence of fragmented data packets, error control becomes difficult to implement.
+              </div>
+
+            </li>
+
+          </ol>
+
+
+
+
+
+          <div class="text-gray-600">Attention reader! Don’t stop learning now. Get hold of all the important  CS Theory concepts for SDE
+          interviews
+          with the <span class="font-bold text-green-600 underline">CS Theory Course</span> at a student-friendly price and become industry ready.</div>
+          
+
+
+
+            <div> <br></div>
         </div>
       </div>
 
