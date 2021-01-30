@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://use.typekit.net/atk5goj.css" />
+
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="bg-white flex border-b items-center min-w-full md:min-w-0 font-medium">
+    <div class="flex hover:text-green-600">
+      <div class="pl-8  py-4">Tutorials</div>
+      <i class="material-icons py-4">
+        expand_more
+      </i>
+    </div>
+    <div class="flex  hover:text-green-600">
+      <div class="pl-6 py-4">Student</div>
+      <i class="material-icons py-4">
+        expand_more
+      </i>
+    </div>
+    <div class="flex  hover:text-green-600">
+      <div class="pl-6 py-4">jobs</div>
+      <i class="material-icons py-4">
+        expand_more
+      </i>
+    </div>
+
+    <div class="pl-5 py-4  hover:text-green-600">Courses</div>
+
+
+    <div class="pl-60 py-4 justify-self-center "><img src="images/logo.svg" class="min-w-max max-h-7 " /></div>
+
+    <div class=" pl-80 py-2 flex">
+      <input type="text" class=" space-x-0 border-2 border-r-0 rounded-l-lg pl-5 py-1.5 placeholder-opacity-95"
+        placeholder="Search...">
+      <div class="bg-gray-800 rounded-r-lg ">
+        <i class=" material-icons px-1.5 py-2 text-white ">
+          search
+        </i>
+      </div>
+
+    </div>
+    <div class=" bg-gray-800 rounded-md min-w-max min-h-full  max-w-md px-6 py-2 mx-7  ">
+      <div class=" text-sm text-white "> Sign In</div>
+    </div>
+
+  </div>
+
+  <div class="bg-white flex justify-between border-b shadow-md font-medium sticky top-0">
+    <div class="flex">
+      <i class="material-icons py-3 pl-8">
+        article
+      </i>
+      <div class="pl-1 py-3">Related Articles</div>
+      <i class="material-icons py-3">
+        chevron_right
+      </i>
+    </div>
+
+    <div class="flex">
+      <i class="material-icons py-3">
+        bookmark_border
+      </i>
+      <div class="pl-1.5 py-3 pr-10">Save for later</div>
+
+    </div>
+
+  </div>
+  </div>
+  <div class="z-40 fixed inset-x-0 bottom-0  max-w-screen  bg-gray-700  max-h-full flex items-center">
+    <div class="text-white mx-14 ml-44 justify-center my-2 text-xs text-gray-300">We use cookies to ensure you have the
+      best browsing experience on our website. By using our site, you acknowledge that you have read and understood our
+      <span class="underline text-gray-400  hover:text-gray-300">Cookie Policy</span> & <span
+        class="underline hover:text-gray-300 text-gray-400"> Privacy Policy</span>
+    </div>
+    <div><button
+        class="mr-10 ml-36 justify-center my-2 bg-green-400 px-12 py-1  rounded-md min-w-max min-h-full font-semibold hover:bg-green-300">Got
+        It !</button></div>
+  </div>
+  <div class="flex">
+    <div class="bg-white ml-10 mt-10 max-w-4xl rounded-2xl ">
+      <div class="my-10 mx-16 space-y-5 font-medium">
+        <div class="font-bold text-3xl text-gray-800 tracking-wide">Network Layer Services- Packetizing, Routing and
+          Forwarding</div>
+        <div class="pb-5 text-sm text-gray-500 font-medium">Last Updated : 21 Dec, 2020</div>
+        <div class="space-y-3">
+          <div class="text-gray-600"><span class="font-bold text-gray-700">Network layer</span> is the third layer in
+            the <span class="underline text-green-600">OSI model </span> of computer networks. It’s main function is to
+            transfer
+            network packets from the source to the destination. It is involved both at the source host and the
+            destination
+            host. At the source, it accepts a packet from the transport layer, encapsulates it in a datagram and then
+            deliver
+            the packet to the data link layer so that it can further be sent to the receiver. At the destination, the
+            datagram
+            is decapsulated, the packet is extracted and delivered to the corresponding transport layer.
+          </div>
+
+          <div>
+            <span class="font-bold text-gray-700">Features :</span>
+
+          </div>
+          <div>
+            <ol class="list-decimal mr-14 ml-14 text-gray-600">
+              <li>Main responsibility of Network layer is to carry the data packets from the source to the destination
+                without changing or using it.</li>
+              <li>If the packets are too large for delivery, they are fragmented i.e., broken down into smaller packets.
+              </li>
+              <li>It decides the root to be taken by the packets to travel from the source to the destination among the
+                multiple roots available in a network (also called as routing).</li>
+              <li>The source and destination addresses are added to the data packets inside the network layer.</li>
+            </ol>
+
+          </div>
+        </div>
+        <div class="space-y-5">
+          <div class=" text-gray-600">The <span class="font-bold text-gray-700">services</span> which are offered by the
+            network layer protocol are as follows:</div>
+
+          <div>
+            <ol class="list-decimal space-y-5">
+              <li class="mr-14 ml-14 text-gray-600">
+                <div><span class="font-bold text-green-600 underline">Packetizing</span> <span
+                    class="font-bold text-gray-700">–</span> </div>
+                <div class="space-y-3">
+                  <div>
+                    The process of encapsulating the data received from upper layers of the network(also called as
+                    payload)
+                    in a
+                    network layer packet at the source and decapsulating the payload from the network layer packet at
+                    the
+                    destination is known as packetizing.
+                    The source host adds a header that contains the source and destination address and some other
+                    relevant
+                    information required by the network layer protocol to the payload received from the upper layer
+                    protocol,
+                    and
+                    delivers the packet to the data link layer.
+                  </div>
+                  <div>
+                    The destination host receives the network layer packet from its data link layer, decapsulates the
+                    packet,
+                    and
+                    delivers the payload to the corresponding upper layer protocol. The routers in the path are not
+                    allowed
+                    to
+                    change either the source or the destination address. The routers in the path are not allowed to
+                    decapsulate
+                    the packets they receive unless they need to be fragmented.
+                  </div>
+                </div>
+              </li>
+              <li class="mr-14 ml-14 text-gray-600">
+                <div><span class="font-bold text-green-600 underline">Routing </span> <span
+                    class="font-bold text-gray-700">and Forwarding – </span></div>
+                <div class="space-y-3">
+                  <div>
+                    Routing and Forwarding –
+                    These are two other services offered by the network layer. In a network, there are a number of
+                    routes
+                    available from the source to the destination. The network layer specifies has some strategies which
+                    find
+                    out
+                    the best possible route. This process is referred to as routing. There are a number of routing
+                    protocols
+                    which
+                    are used in this process and they should be run to help the routers coordinate with each other and
+                    help in
+                    establishing communication throughout the network.<br>
+                    Forwarding is simply defined as the action applied by each router when a packet arrives at one of
+                    its
+                    interfaces. When a router receives a packet from one of its attached networks, it needs to forward
+                    the
+                    packet
+                    to another attached network (<span class="font-meduim text-yellow-600 underline">unicast routing </span>) or to some attached networks(in case of multicast
+                    routing).
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+              Some of the other services which are expected from the network layer are:
+
+
+
+
+              Error Control –
+              Although it can be implemented in the network layer, but it is usually not preferred because the data
+              packet
+              in a network layer maybe fragmented at each router, which makes error checking inefficient in the network
+              layer.
+
+              Flow Control –
+              It regulates the amount of data a source can send without overloading the receiver. If the source produces
+              a
+              data at a very faster rate than the receiver can consume it, the receiver will be overloaded with data. To
+              control the flow of data, the receiver should send a feedback to the sender to inform the latter that it
+              is
+              overloaded with data.
+              There is a lack of flow control in the design of the network layer. It does not directly provide any flow
+              control. The datagrams are sent by the sender when they are ready, without any attention to the readiness
+              of
+              the receiver.
+
+
+              Congestion Control –
+              Congestion occurs when the number of datagrams sent by source is beyond the capacity of network or
+              routers.
+              This is another issue in the network layer protocol. If congestion continues, sometimes a situation may
+              arrive
+              where the system collapses and no datagrams are delivered. Although congestion control is indirectly
+              implemented in network layer, but still there is a lack of congestion control in the network layer.
+              Advantages of Network Layer Services :
+
+              Packetization service in network layer provides an ease of transportation of the data packets.
+              Packetization also eliminates single points of failure in data communication systems.
+              Routers present in the network layer reduce network traffic by creating collision and broadcast domains.
+              With the help of Forwarding, data packets are transferred from one place to another in the network.
+              Disadvantages of Network Layer Services :
+
+              There is a lack of flow control in the design of the network layer.
+              Congestion occurs sometimes due to the presence of too many datagrams in a network which are beyond the
+              capacity of network or the routers. Due to this, some routers may drop some of the datagrams and some
+              important piece of information maybe lost.
+              Although indirectly error control is present in network layer, but there is a lack of proper error control
+              mechanisms as due to presence of fragmented data packets, error control becomes difficult to implement.
+
+
+
+              Attention reader! Don’t stop learning now. Get hold of all the important CS Theory concepts for SDE
+              interviews
+              with the CS Theory Course at a student-friendly price and become industry ready.
+            
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="ml-10 mt-10 max-w-xs">
+      <img src="images/iu.jpg " />
+    </div>
+  </div>
+</body>
+
+</html>
